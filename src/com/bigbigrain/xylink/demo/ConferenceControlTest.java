@@ -1,19 +1,27 @@
 package com.bigbigrain.xylink.demo;
 
 
-import com.xylink.config.SDKConfigMgr;
-import com.xylink.model.*;
-import com.xylink.sdk.conferenceControl.ConferenceControlApi;
-import com.xylink.sdk.conferenceControl.CreateMeetingApi;
-import com.xylink.util.Result;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
+
+import com.xylink.model.CallInviteRequest;
+import com.xylink.model.CurrentMeeting;
+import com.xylink.model.Device;
+import com.xylink.model.DeviceInfo;
+import com.xylink.model.DeviceNotification;
+import com.xylink.model.MeetingRoom;
+import com.xylink.model.MeetingStatus;
+import com.xylink.model.MeetingSubtitle;
+import com.xylink.model.MeetingSubtitleRequest;
+import com.xylink.model.SdkMeeting;
+import com.xylink.model.SdkMeetingReq;
+import com.xylink.model.ShareAuthTarget;
+import com.xylink.sdk.conferenceControl.ConferenceControlApi;
+import com.xylink.sdk.conferenceControl.CreateMeetingApi;
+import com.xylink.util.Result;
 
 
 public class ConferenceControlTest {
