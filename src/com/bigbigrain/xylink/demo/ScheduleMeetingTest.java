@@ -34,8 +34,8 @@ public class ScheduleMeetingTest {
         ScheduleMeetingApi sma=new ScheduleMeetingApi();
         ReminderMeeting reminderMeeting=new ReminderMeeting();
         reminderMeeting.setTitle("zhangy测试预约的会议");
-        reminderMeeting.setStartTime(15058137777890l);
-        reminderMeeting.setEndTime(15058139897890l);
+        reminderMeeting.setStartTime(15058137777890L);
+        reminderMeeting.setEndTime(15058139897890L);
         Set<String> participants = new HashSet<String>();
         participants.add("496329");
         reminderMeeting.setParticipants(participants);
@@ -61,12 +61,12 @@ public class ScheduleMeetingTest {
     public void updateMeeting() throws IOException{
         ScheduleMeetingApi sma=new ScheduleMeetingApi();
         ReminderMeeting reminderMeeting=new ReminderMeeting();
-        reminderMeeting.setStartTime(15058137777890l);
+        reminderMeeting.setStartTime(15058137777890L);
         reminderMeeting.setPassword("2345");
         reminderMeeting.setAddress("地中海");
         reminderMeeting.setAutoInvite(1);
         reminderMeeting.setAutoRecord(0);
-        reminderMeeting.setEndTime(15058139897890l);
+        reminderMeeting.setEndTime(15058139897890L);
         int maxParticipantCount=5;
         String meetingId = "34436";
         Result result = sma.updateMeeting(XyLinkConstants.ENTERPRISE_ID, XyLinkConstants.TOKEN, meetingId,reminderMeeting,maxParticipantCount);
@@ -100,7 +100,7 @@ public class ScheduleMeetingTest {
     @Test
     public void getAllMeeting() throws IOException{
         ScheduleMeetingApi sma=new ScheduleMeetingApi();
-        long endtime =15058139897890l;
+        long endtime =15058139897890L;
         Result result = sma.getAllMeeting(XyLinkConstants.ENTERPRISE_ID, XyLinkConstants.TOKEN, endtime);
         System.out.println(result);
     }

@@ -40,8 +40,9 @@ public class CreateMeetingApiTest {
 		SdkMeetingReq sdkMeetingReq = new SdkMeetingReq();
         sdkMeetingReq.setMeetingName("张雨的私人会议室");
         sdkMeetingReq.setPassword("123456");
-        sdkMeetingReq.setMeetingNumber("910051111111");
+        sdkMeetingReq.setMeetingNumber("910071111111");
         SdkMeeting sdkMeeting = createMeetingApi.createMeeting(XyLinkConstants.ENTERPRISE_ID, XyLinkConstants.TOKEN, sdkMeetingReq);
+        
         System.out.println(sdkMeeting);
 	}
 	
